@@ -1,2 +1,3 @@
-export { default, contentType, runtime, size } from "./opengraph-image";
+export { default, contentType, size } from "./opengraph-image";
 
+export const runtime = "edge";

@@ -3,7 +3,7 @@ import { ExternalLink } from "@/components/ExternalLink";
 import { IconGitHub, IconLinkedIn, IconMail, IconX } from "@/components/Icons";
 import { PinnedCard } from "@/components/PinnedCard";
 import { TopNav } from "@/components/TopNav";
-import { CommandPalette } from "@/components/CommandPalette";
+
 import { portfolioConfig } from "@/lib/config";
 import { fetchGitHubRepo, fetchGitHubRepos, fetchGitHubUser } from "@/lib/github";
 
@@ -45,8 +45,8 @@ export default async function Home() {
     portfolioConfig.featured.map(async (f) => {
       // Default behavior: dummy link until we match a repo.
       let href = "#";
-      let description = f.description;
-      let tags = [...f.tags];
+      let description: string = f.description;
+      let tags: string[] = [...f.tags];
 
       if (!f.repo) {
         const tokens = [
@@ -101,7 +101,7 @@ export default async function Home() {
         username={login}
         repoCount={user?.public_repos}
       />
-      <CommandPalette />
+
 
       <main className="mx-auto w-full max-w-6xl px-4 pb-16 pt-6">
         <div className="grid gap-8 md:grid-cols-[320px_1fr]">
