@@ -1,6 +1,4 @@
-# Aaditya Patil — Portfolio (hitesh.ai-style)
-
-This project is a UI clone inspired by `hitesh.ai`, customized with Aaditya Patil’s links and content.
+# Aaditya Patil — Portfolio
 
 ## Run locally
 
