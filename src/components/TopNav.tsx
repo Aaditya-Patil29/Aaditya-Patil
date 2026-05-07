@@ -99,10 +99,10 @@ export function TopNav({
 }) {
   return (
     <header className="sticky top-0 z-50 border-b border-[#30363d] bg-[#0d1117]/90 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-4 py-3">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-3">
         <div className="flex items-center gap-3">
           <span
-            className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-[#30363d] bg-[#161b22]/60 text-[#c9d1d9] cursor-default"
+            className="inline-flex h-9 w-9 items-center justify-center text-[#c9d1d9] hover:text-[#f0f6fc] cursor-default"
             aria-label="Menu"
           >
             <IconMenu />
@@ -124,7 +124,7 @@ export function TopNav({
         </div>
 
         {/* Dummy search bar */}
-        <div className="flex flex-1 items-center justify-center px-2">
+        <div className="hidden sm:flex flex-1 items-center justify-center px-2">
           <div className="flex w-full max-w-xl items-center gap-2 rounded-md border border-[#30363d] bg-[#0d1117] px-3 py-1.5 text-sm text-[#8b949e] cursor-default select-none">
             <span className="text-[#8b949e]">
               <IconSearch />
@@ -133,21 +133,21 @@ export function TopNav({
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1 sm:gap-2">
           <span
-            className="hidden h-9 w-9 items-center justify-center rounded-md border border-[#30363d] bg-[#161b22]/60 text-[#c9d1d9] sm:inline-flex cursor-default"
+            className="inline-flex h-9 w-9 items-center justify-center text-[#c9d1d9] hover:text-[#f0f6fc] cursor-default"
             aria-label="Settings"
           >
             <IconGear />
           </span>
           <span
-            className="hidden h-9 w-9 items-center justify-center rounded-md border border-[#30363d] bg-[#161b22]/60 text-[#c9d1d9] sm:inline-flex cursor-default"
+            className="inline-flex h-9 w-9 items-center justify-center text-[#c9d1d9] hover:text-[#f0f6fc] cursor-default"
             aria-label="New"
           >
             <IconPlus />
           </span>
           <span
-            className="hidden h-9 w-9 items-center justify-center rounded-md border border-[#30363d] bg-[#161b22]/60 text-[#c9d1d9] sm:inline-flex cursor-default"
+            className="inline-flex h-9 w-9 items-center justify-center text-[#c9d1d9] hover:text-[#f0f6fc] cursor-default"
             aria-label="Notifications"
           >
             <IconBell />
@@ -177,7 +177,7 @@ export function TopNav({
       </div>
 
       <div className="border-t border-[#30363d] bg-[#0d1117]/90">
-        <div className="mx-auto flex w-full max-w-6xl items-center gap-2 px-4 py-2 text-sm">
+        <div className="mx-auto flex w-full max-w-6xl items-center gap-2 px-4 py-2 text-sm overflow-x-auto whitespace-nowrap no-scrollbar">
           <TabBarItem label="Overview" active icon="overview" />
           <TabBarItem
             label="Repositories"
