@@ -1,4 +1,5 @@
 import React from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { MetricsSection } from './components/MetricsSection';
@@ -30,6 +31,9 @@ export const App: React.FC = () => {
 
       {/* Terminal Footer */}
       <Footer />
+      
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 };
