@@ -10,7 +10,7 @@ export const PERSONAL_INFO = {
   github: "https://github.com/Aaditya-Patil29",
   linkedin: "https://linkedin.com/in/aaditya-patil-m1629",
   // Path to your resume PDF file. Place your PDF in the 'public' directory as 'resume.pdf' or update this URL.
-  resumeUrl: "https://drive.google.com/file/d/19xOdpQR1HLz1z-fDO9GXusW15B3ZRs4P/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/10EqQZ4dy2iKS0sG-mGzI3rZldGRbsyJe/view?usp=sharing",
   bio: "Computer Engineering Undergraduate passionate about Cloud Infrastructure, Backend Development, Automation, and System Design.",
 };
 
